@@ -5,28 +5,24 @@ using namespace std;
 int main() {
 	int n; cin >> n;
 	int a[n];
-	
-	for(int i = 0 ; i < n ; i++) cin >> a[i];
+	for(int &x : a) cin >> x;
+	int dem_chan = 0, dem_le = 0;
+	int tong_chan = 0 , tong_le = 0;
 
-	int coutChan= 0;
-	int coutLe = 0;
-	int sumChan = 0;
-	int sumLe = 0;
 	for(int i = 0 ; i < n ; i++) {
 		if(a[i] % 2 == 0) {
-			coutChan++;	
-			sumChan += a[i];
+			dem_chan++;
+			tong_chan += a[i];
 		} else {
-			coutLe++;
-			sumLe += a[i];
+			dem_le++;
+			tong_le += a[i];
 		}
 	}
 
-	cout << coutChan << endl;
-	cout << coutLe << endl;
-	cout << sumChan << endl;
-	cout << sumLe << endl;
-
+	cout << dem_chan << endl;
+	cout << dem_le << endl;
+	cout << tong_chan << endl;
+	cout << tong_le << endl;
 
 	return 0;
 }
