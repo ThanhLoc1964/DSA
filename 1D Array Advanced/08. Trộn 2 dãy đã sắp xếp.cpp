@@ -9,7 +9,7 @@ int main() {
 	int i = 0 , j = 0;
 	while(i < n && j < m) {
 		if(a[i] <= b[j]){
-			cout << a[i];
+			cout << a[i] << " ";
 			i++;
 		}
 		else {
