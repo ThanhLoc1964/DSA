@@ -8,6 +8,7 @@ int main() {
 		cin >> x;
 	}
 
+	/* Cach 4: dung set */
 
 	/* Cach 3 */ 
 	int d[1001] = {0};
