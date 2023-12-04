@@ -19,6 +19,22 @@ bool tim(ll x){
 	return 0;
 }
 
+
+/*Cach 2: Kiểm tra số fibonacci bằng vòng lặp*/ 
+int fibo(long long n) {
+	if(n == 0 || n == 1) return 1;
+
+	int fn1 = 0, fn2 = 1, fn;
+	for(int i = 2 ; i <= 92 ; i++) {
+		fn = fn1 + fn2;
+		if(fn == n) return 1;
+		fn2 = fn1;
+		fn1 = fn;
+	}
+	return 0;
+}
+
+
 // Notes so fibo 93 la so cuoi cung dc luu trong long long
 
 int main() {
