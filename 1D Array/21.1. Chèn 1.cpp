@@ -14,6 +14,7 @@ int main() {
 
 
 	/* Cách 2 */
+	// n++;
 	// for(int i = n - 1; i > k ; i--) {
 	// 	a[i + 1] = a[i];
 	// }
