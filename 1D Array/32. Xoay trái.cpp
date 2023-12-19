@@ -20,5 +20,18 @@ int main() {
 
 	for(int i = 0 ; i < n; i++) cout << a[i] << ' ';
 
+
+
+	/* Cách 2 */
+	// void rotateLeft(int arr[], int n, int k) {
+	// 	k = k % n; // Đảm bảo K không vượt quá số phần tử của mảng
+	
+	// 	// Dịch trái K vị trí
+	// 	for (int i = 0; i < n; i++) {
+	// 		cout << arr[(i + k) % n] << " ";
+	// 	}
+	// 	cout << endl;
+	// }   
+
 	return 0;
 }
